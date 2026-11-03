@@ -42,3 +42,5 @@ document.addEventListener('keydown',e=>{if(pm.hidden)return;if(e.key==='Escape')
 window.PUREpromo=open;if(/[?&]promo/.test(location.search)){try{sessionStorage.clear();localStorage.removeItem(K)}catch(e){}open()}else if(!/[?&]nopromo/.test(location.search)){setTimeout(open,6000);
 if(matchMedia('(hover:hover)').matches)document.addEventListener('mouseout',e=>{if(!e.relatedTarget&&e.clientY<=0)open()})}}
 })();
+
+(()=>{const q=matchMedia('(prefers-reduced-motion: reduce)');const set=()=>document.querySelectorAll('video.anim').forEach(v=>{if(q.matches){v.removeAttribute('autoplay');v.pause();v.currentTime=0}else{v.play&&v.play().catch(()=>{})}});set();q.addEventListener&&q.addEventListener('change',set)})();
