@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "items": [
+    {"id": "call-video", "type": "video", "src": ["assets/anim/pure-call.webm", "assets/anim/pure-call.mp4"], "poster": "assets/anim/pure-call-poster.jpg", "lang": "any", "weight": 3, "slots": ["hero", "promo"]},
+    {"id": "hero-call", "type": "image", "src": "assets/img/hero.webp", "lang": "any", "weight": 2, "slots": ["hero", "promo"]},
+    {"id": "chat-companions", "type": "image", "src": "assets/img/chat.webp", "lang": "any", "weight": 1, "slots": ["promo"]},
+    {"id": "cat-video", "type": "video", "src": ["assets/anim/pure-cat.webm", "assets/anim/pure-cat.mp4"], "poster": "assets/anim/pure-cat-poster.jpg", "lang": "any", "weight": 1, "slots": ["promo"]},
+    {"id": "translate-th-en", "type": "image", "src": "assets/img/ai.webp", "lang": "any", "weight": 1, "slots": ["promo"]},
+    {"id": "nearby", "type": "image", "src": "assets/img/nearby.webp", "lang": "any", "weight": 1, "slots": ["promo"]}
+  ]
+}

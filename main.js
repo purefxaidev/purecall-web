@@ -28,8 +28,8 @@ $$('.btn').forEach(b=>{b.addEventListener('pointermove',e=>{const r=b.getBoundin
 const cv=$('#aurora');if(cv&&!RM){const x=cv.getContext('2d');let w,h,P=[],run=true,raf;const dpr=Math.min(devicePixelRatio||1,1.5);
 function rs(){w=cv.width=innerWidth*dpr;h=cv.height=innerHeight*dpr;const n=Math.min(70,Math.round(innerWidth/22));P=Array.from({length:n},()=>({x:Math.random()*w,y:Math.random()*h,r:(Math.random()*1.4+.4)*dpr,vx:(Math.random()-.5)*.15*dpr,vy:(Math.random()-.5)*.15*dpr,a:Math.random()*.5+.2}))}
 let t=0;function fr(){if(!run)return;t+=.003;x.clearRect(0,0,w,h);
-[[.25,.15,'34,211,238'],[.75,.35,'139,92,246']].forEach(([px,py,c],i)=>{const cx=w*(px+.08*Math.sin(t+i*2)),cy=h*(py+.06*Math.cos(t*1.3+i)),g=x.createRadialGradient(cx,cy,0,cx,cy,Math.max(w,h)*.45);g.addColorStop(0,`rgba(${c},.10)`);g.addColorStop(1,`rgba(${c},0)`);x.fillStyle=g;x.fillRect(0,0,w,h)});
-P.forEach(p=>{p.x=(p.x+p.vx+w)%w;p.y=(p.y+p.vy+h)%h;x.beginPath();x.arc(p.x,p.y,p.r,0,6.283);x.fillStyle=`rgba(230,235,255,${p.a})`;x.fill()});raf=requestAnimationFrame(fr)}
+[[.25,.15,'0,230,118'],[.75,.35,'16,185,129']].forEach(([px,py,c],i)=>{const cx=w*(px+.08*Math.sin(t+i*2)),cy=h*(py+.06*Math.cos(t*1.3+i)),g=x.createRadialGradient(cx,cy,0,cx,cy,Math.max(w,h)*.45);g.addColorStop(0,`rgba(${c},.10)`);g.addColorStop(1,`rgba(${c},0)`);x.fillStyle=g;x.fillRect(0,0,w,h)});
+P.forEach(p=>{p.x=(p.x+p.vx+w)%w;p.y=(p.y+p.vy+h)%h;x.beginPath();x.arc(p.x,p.y,p.r,0,6.283);x.fillStyle=`rgba(200,255,225,${p.a})`;x.fill()});raf=requestAnimationFrame(fr)}
 rs();addEventListener('resize',rs);fr();document.addEventListener('visibilitychange',()=>{run=!document.hidden;if(run){cancelAnimationFrame(raf);fr()}})}
 // promo modal
 const pm=$('#promo');if(pm){const K='pure.promo.until',box=pm.querySelector('.promo-box');let last,shown=false;
