@@ -1,11 +1,204 @@
 {
   "version": 1,
   "items": [
-    {"id": "call-video", "type": "video", "src": ["assets/anim/pure-call.webm", "assets/anim/pure-call.mp4"], "poster": "assets/anim/pure-call-poster.jpg", "lang": "any", "weight": 3, "slots": ["hero", "promo"]},
-    {"id": "hero-call", "type": "image", "src": "assets/img/hero.webp", "lang": "any", "weight": 2, "slots": ["hero", "promo"]},
-    {"id": "chat-companions", "type": "image", "src": "assets/img/chat.webp", "lang": "any", "weight": 1, "slots": ["promo"]},
-    {"id": "cat-video", "type": "video", "src": ["assets/anim/pure-cat.webm", "assets/anim/pure-cat.mp4"], "poster": "assets/anim/pure-cat-poster.jpg", "lang": "any", "weight": 1, "slots": ["promo"]},
-    {"id": "translate-th-en", "type": "image", "src": "assets/img/ai.webp", "lang": "any", "weight": 1, "slots": ["promo"]},
-    {"id": "nearby", "type": "image", "src": "assets/img/nearby.webp", "lang": "any", "weight": 1, "slots": ["promo"]}
+    {
+      "id": "call-video",
+      "type": "video",
+      "src": [
+        "assets/anim/pure-call.webm",
+        "assets/anim/pure-call.mp4"
+      ],
+      "poster": "assets/anim/pure-call-poster.jpg",
+      "lang": "any",
+      "weight": 3,
+      "slots": [
+        "hero",
+        "promo"
+      ]
+    },
+    {
+      "id": "hero-call",
+      "type": "image",
+      "src": "assets/img/hero.webp",
+      "lang": "any",
+      "weight": 2,
+      "slots": [
+        "hero",
+        "promo"
+      ]
+    },
+    {
+      "id": "chat-companions",
+      "type": "image",
+      "src": "assets/img/chat.webp",
+      "lang": "any",
+      "weight": 1,
+      "slots": [
+        "promo"
+      ]
+    },
+    {
+      "id": "cat-video",
+      "type": "video",
+      "src": [
+        "assets/anim/pure-cat.webm",
+        "assets/anim/pure-cat.mp4"
+      ],
+      "poster": "assets/anim/pure-cat-poster.jpg",
+      "lang": "any",
+      "weight": 1,
+      "slots": [
+        "promo"
+      ]
+    },
+    {
+      "id": "translate-th-en",
+      "type": "image",
+      "src": "assets/img/ai.webp",
+      "lang": "any",
+      "weight": 1,
+      "slots": [
+        "promo"
+      ]
+    },
+    {
+      "id": "nearby",
+      "type": "image",
+      "src": "assets/img/nearby.webp",
+      "lang": "any",
+      "weight": 1,
+      "slots": [
+        "promo"
+      ]
+    },
+    {
+      "id": "ad-wave",
+      "type": "video",
+      "src": [
+        "assets/ads/pure-wave.webm",
+        "assets/ads/pure-wave.mp4"
+      ],
+      "poster": "assets/ads/pure-wave-poster.jpg",
+      "lang": "any",
+      "weight": 3,
+      "slots": [
+        "promo"
+      ]
+    },
+    {
+      "id": "ad-smile",
+      "type": "video",
+      "src": [
+        "assets/ads/pure-smile.webm",
+        "assets/ads/pure-smile.mp4"
+      ],
+      "poster": "assets/ads/pure-smile-poster.jpg",
+      "lang": "any",
+      "weight": 3,
+      "slots": [
+        "promo"
+      ]
+    },
+    {
+      "id": "ad-holo",
+      "type": "video",
+      "src": [
+        "assets/ads/pure-holo.webm",
+        "assets/ads/pure-holo.mp4"
+      ],
+      "poster": "assets/ads/pure-holo-poster.jpg",
+      "lang": "any",
+      "weight": 2,
+      "slots": [
+        "promo"
+      ]
+    },
+    {
+      "id": "ad-walk",
+      "type": "video",
+      "src": [
+        "assets/ads/pure-walk.webm",
+        "assets/ads/pure-walk.mp4"
+      ],
+      "poster": "assets/ads/pure-walk-poster.jpg",
+      "lang": "any",
+      "weight": 2,
+      "slots": [
+        "promo"
+      ]
+    },
+    {
+      "id": "ad-turn",
+      "type": "video",
+      "src": [
+        "assets/ads/pure-turn.webm",
+        "assets/ads/pure-turn.mp4"
+      ],
+      "poster": "assets/ads/pure-turn-poster.jpg",
+      "lang": "any",
+      "weight": 2,
+      "slots": [
+        "promo"
+      ]
+    },
+    {
+      "id": "ad-stories",
+      "type": "video",
+      "src": [
+        "assets/ads/pure-stories.webm",
+        "assets/ads/pure-stories.mp4"
+      ],
+      "poster": "assets/ads/pure-stories-poster.jpg",
+      "lang": "any",
+      "weight": 2,
+      "slots": [
+        "promo"
+      ]
+    },
+    {
+      "id": "ad-group",
+      "type": "video",
+      "src": [
+        "assets/ads/pure-group.webm",
+        "assets/ads/pure-group.mp4"
+      ],
+      "poster": "assets/ads/pure-group-poster.jpg",
+      "lang": "any",
+      "weight": 3,
+      "slots": [
+        "hero",
+        "promo"
+      ]
+    },
+    {
+      "id": "ad-orbit",
+      "type": "video",
+      "src": [
+        "assets/ads/pure-orbit.webm",
+        "assets/ads/pure-orbit.mp4"
+      ],
+      "poster": "assets/ads/pure-orbit-poster.jpg",
+      "lang": "any",
+      "weight": 3,
+      "slots": [
+        "hero",
+        "promo"
+      ]
+    },
+    {
+      "id": "ad-secure",
+      "type": "video",
+      "src": [
+        "assets/ads/pure-secure.webm",
+        "assets/ads/pure-secure.mp4"
+      ],
+      "poster": "assets/ads/pure-secure-poster.jpg",
+      "lang": "any",
+      "weight": 2,
+      "slots": [
+        "hero",
+        "promo"
+      ]
+    }
   ]
 }
