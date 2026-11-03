@@ -1,18 +1,18 @@
 // PURE web guide: offline knowledge base + optional live AI (server.json -> <url>/api/web-guide)
-(()=>{const APK='https://github.com/purefxaidev/purecall-web/releases/latest/download/PURE-0.8.0.apk';
+(()=>{const APK='https://github.com/purefxaidev/purecall-web/releases/download/v0.10.1/PURE-0.10.1.apk';
 const L=()=>document.documentElement.lang==='th'?'th':'en';
-const T={th:{title:'ถามผู้ช่วย PURE',ph:'พิมพ์คำถาม…',send:'ส่ง',close:'ปิด',hello:'สวัสดีครับ ผมช่วยแนะนำการติดตั้งและใช้งาน PURE ได้ เลือกหัวข้อด้านล่างหรือพิมพ์คำถามได้เลย',miss:'ขอโทษครับ ผมยังไม่มีคำตอบเรื่องนี้ ลองเลือกหัวข้อด้านล่างนะครับ',next:'ขั้นต่อไป',prev:'ย้อนกลับ',done:'เสร็จแล้ว',step:'ขั้นที่',live:'ตอบโดย AI ออนไลน์',offline:'คู่มือในตัว',soon:'กำลังมาใน 0.9'},
-en:{title:'Ask PURE guide',ph:'Type a question…',send:'Send',close:'Close',hello:'Hi! I can help you install and use PURE. Pick a topic below or type a question.',miss:'Sorry, I don\'t have an answer for that yet. Try one of the topics below.',next:'Next',prev:'Back',done:'Done',step:'Step',live:'Answered by online AI',offline:'Built-in guide',soon:'Coming in 0.9'}};
+const T={th:{title:'ถามผู้ช่วย PURE',ph:'พิมพ์คำถาม…',send:'ส่ง',close:'ปิด',hello:'สวัสดีครับ ผมช่วยแนะนำการติดตั้งและใช้งาน PURE ได้ เลือกหัวข้อด้านล่างหรือพิมพ์คำถามได้เลย',miss:'ขอโทษครับ ผมยังไม่มีคำตอบเรื่องนี้ ลองเลือกหัวข้อด้านล่างนะครับ',next:'ขั้นต่อไป',prev:'ย้อนกลับ',done:'เสร็จแล้ว',step:'ขั้นที่',live:'ตอบโดย AI ออนไลน์',offline:'คู่มือในตัว',soon:'มีแล้ว'},
+en:{title:'Ask PURE guide',ph:'Type a question…',send:'Send',close:'Close',hello:'Hi! I can help you install and use PURE. Pick a topic below or type a question.',miss:'Sorry, I don\'t have an answer for that yet. Try one of the topics below.',next:'Next',prev:'Back',done:'Done',step:'Step',live:'Answered by online AI',offline:'Built-in guide',soon:'Available'}};
 // KB: id -> {k:{th:[keywords],en:[...]}, chip:{th,en}, steps:[{th,en,img?}], soon?}
 const KB=[
 {id:'download',chip:{th:'ดาวน์โหลด',en:'Download'},k:['ดาวน์โหลด','โหลด','apk','download','get','ไฟล์'],steps:[
-{th:`เปิดหน้านี้บนมือถือ Android 8 ขึ้นไป แล้วกด <a href="${APK}">ดาวน์โหลด PURE-0.8.0.apk</a>`,en:`Open this page on an Android 8+ phone and tap <a href="${APK}">Download PURE-0.8.0.apk</a>`,img:'assets/img/hero.webp'},
+{th:`เปิดหน้านี้บนมือถือ Android 8 ขึ้นไป แล้วกด <a href="${APK}">ดาวน์โหลด PURE-0.10.1.apk</a>`,en:`Open this page on an Android 8+ phone and tap <a href="${APK}">Download PURE-0.10.1.apk</a>`,img:'assets/img/hero.webp'},
 {th:'ถ้าเบราว์เซอร์เตือนว่าไฟล์อาจเป็นอันตราย ให้กด "ดาวน์โหลดต่อ" เพราะเป็นไฟล์ APK ที่ไม่ได้มาจาก Google Play',en:'If the browser warns the file may be harmful, tap "Download anyway". It warns because the APK is not from Google Play.'}]},
 {id:'unknown',chip:{th:'อนุญาตแหล่งที่ไม่รู้จัก',en:'Unknown sources'},k:['แหล่งที่ไม่รู้จัก','ไม่รู้จัก','อนุญาต','unknown','sources','permission','blocked','บล็อก'],steps:[
 {th:'เปิด ตั้งค่า › แอป › เลือกเบราว์เซอร์ที่ใช้ดาวน์โหลด (เช่น Chrome)',en:'Open Settings › Apps › choose the browser you downloaded with (e.g. Chrome)'},
 {th:'แตะ "ติดตั้งแอปที่ไม่รู้จัก" แล้วเปิด "อนุญาตจากแหล่งนี้" ชื่อเมนูอาจต่างกันเล็กน้อยตามยี่ห้อมือถือ',en:'Tap "Install unknown apps" and turn on "Allow from this source". Menu names vary slightly by phone brand.'}]},
 {id:'install',chip:{th:'ติดตั้ง',en:'Install'},k:['ติดตั้ง','install','setup','ลง'],steps:[
-{th:'เปิดไฟล์ PURE-0.8.0.apk จากแถบแจ้งเตือนหรือโฟลเดอร์ ดาวน์โหลด',en:'Open PURE-0.8.0.apk from the notification or your Downloads folder'},
+{th:'เปิดไฟล์ PURE-0.10.1.apk จากแถบแจ้งเตือนหรือโฟลเดอร์ ดาวน์โหลด',en:'Open PURE-0.10.1.apk from the notification or your Downloads folder'},
 {th:'กด "ติดตั้ง" รอสักครู่ แล้วกด "เปิด"',en:'Tap "Install", wait a moment, then tap "Open"'},
 {th:'ใส่ที่อยู่เซิร์ฟเวอร์ PURE ที่คุณได้รับ หรือเซิร์ฟเวอร์ที่คุณรันเอง',en:'Enter the PURE server address you were given, or one you run yourself'}]},
 {id:'signup',chip:{th:'สมัครสมาชิก',en:'Sign up'},k:['สมัคร','สมาชิก','บัญชี','ล็อกอิน','เข้าสู่ระบบ','sign up','signup','register','account','login'],steps:[
@@ -24,10 +24,10 @@ const KB=[
 {id:'calls',chip:{th:'โทร & วิดีโอคอล',en:'Calls'},k:['โทร','วิดีโอคอล','คอล','call','video','voice','เสียง'],steps:[
 {th:'เปิดแชตกับเพื่อน แล้วกดไอคอนโทรศัพท์ (เสียง) หรือกล้อง (วิดีโอ)',en:'Open a chat with a friend and tap the phone icon (voice) or camera icon (video)',img:'assets/img/hero.webp'},
 {th:'อนุญาตไมโครโฟนและกล้องเมื่อแอปถาม สายจะเชื่อมต่อผ่าน WebRTC',en:'Allow microphone and camera when asked. Calls connect over WebRTC.'}]},
-{id:'group',soon:1,chip:{th:'วิดีโอคอลกลุ่ม',en:'Group calls'},k:['กลุ่ม','หลายคน','group call','group','conference'],steps:[
-{th:'วิดีโอคอลกลุ่มยังไม่มีในรุ่น 0.8.0 กำลังพัฒนาสำหรับ PURE 0.9 ตอนนี้โทรได้ทีละคน',en:'Group video calls are not in 0.8.0 yet. They are being built for PURE 0.9. For now, calls are one-to-one.',img:'assets/img/group.webp'}]},
-{id:'stories',soon:1,chip:{th:'สตอรี่',en:'Stories'},k:['สตอรี่','story','stories','24'],steps:[
-{th:'สตอรี่ 24 ชั่วโมงยังไม่มีในรุ่น 0.8.0 กำลังพัฒนาสำหรับ PURE 0.9 ตอนนี้โพสต์ไทม์ไลน์และ Reels ได้แล้ว',en:'24-hour stories are not in 0.8.0 yet. They are coming in PURE 0.9. You can already post to the timeline and Reels.',img:'assets/img/stories.webp'}]},
+{id:'group',chip:{th:'วิดีโอคอลกลุ่ม',en:'Group calls'},k:['กลุ่ม','หลายคน','group call','group','conference'],steps:[
+{th:'เปิดแชตกลุ่ม แล้วกดปุ่มวิดีโอคอลด้านบน เพื่อนในกลุ่มจะได้รับสายพร้อมกัน',en:'Open a group chat and tap the video-call button at the top; everyone in the group gets the call.',img:'assets/img/group.webp'}]},
+{id:'stories',chip:{th:'สตอรี่',en:'Stories'},k:['สตอรี่','story','stories','24'],steps:[
+{th:'ไปที่ไทม์ไลน์ กดวงกลม สตอรี่ของคุณ ด้านบน เลือกรูปหรือพิมพ์ข้อความ สตอรี่จะหายไปเองใน 24 ชั่วโมง',en:'Go to Timeline, tap Your story at the top, pick a photo or type text. Stories disappear after 24 hours.',img:'assets/img/stories.webp'}]},
 {id:'nearby',chip:{th:'โหมดออฟไลน์',en:'Offline nearby'},k:['ออฟไลน์','ไม่มีเน็ต','ใกล้','บลูทูธ','bluetooth','wifi','wi-fi','offline','nearby','hotspot'],steps:[
 {th:'เปิด Wi-Fi หรือ Bluetooth ทั้งสองเครื่อง และให้ทั้งสองเครื่องเปิดแอป PURE',en:'Turn on Wi-Fi or Bluetooth on both phones and open PURE on both',img:'assets/img/nearby.webp'},
 {th:'เลือกโหมดข้อความใกล้ตัว แล้วเลือกเครื่องของเพื่อน ข้อความจะเข้ารหัสและส่งได้โดยไม่ต้องใช้อินเทอร์เน็ต',en:'Choose nearby messaging and pick your friend\'s device. Messages are encrypted and work without internet.'}]},
