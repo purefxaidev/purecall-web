@@ -109,3 +109,5 @@ footer{text-align:center;padding:40px;opacity:.6;display:flex;gap:10px;justify-c
 .guide-form{display:flex;gap:8px;padding:10px 12px 12px}.guide-form input{flex:1;min-width:0;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.14);border-radius:12px;padding:10px 12px;color:#fff;font:inherit}
 .guide-form input:focus,.chip:focus-visible,.guide-fab:focus-visible{outline:2px solid var(--g1);outline-offset:2px}
 @media(max-width:640px){.guide-fab{right:12px;bottom:12px;padding:11px 14px}.guide-panel{right:0;left:0;bottom:0;width:100%;height:min(82dvh,620px);border-radius:22px 22px 0 0}}
+
+.pet-grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));max-width:1000px;margin:24px auto 0}.pet-card{margin:0;background:#000;border:1px solid rgba(0,230,118,.25);border-radius:20px;overflow:hidden;box-shadow:0 0 24px rgba(16,185,129,.15);text-align:center}.pet-card video{width:100%;height:auto;display:block;aspect-ratio:1}.pet-card figcaption{padding:10px;color:#00E676;font-weight:600}
