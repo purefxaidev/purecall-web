@@ -1,12 +1,12 @@
 {
-  "versionCode": 16,
-  "versionName": "0.9.0",
-  "sha256": "d257e1e69c3ea73c8d32c8cafa929da72c20a1dbfa9f54e60cdd550d3d884608",
-  "apkUrl": "https://github.com/purefxaidev/purecall-web/releases/download/v0.9.0/PURE-0.9.0-release.apk",
+  "versionCode": 20,
+  "versionName": "0.10.1",
+  "sha256": "af1f740e87c2766bdb374f74a669b7973895a5914815cc615e50722a93df7205",
+  "apkUrl": "https://github.com/purefxaidev/purecall-web/releases/download/v0.10.1/PURE-0.10.1.apk",
   "minSupportedVersionCode": 1,
   "changelog": {
-    "th": "เสียงตอบเร็วขึ้น (เล่นทีละประโยค + แคชเสียง Drama3), ห้องสัตว์เลี้ยงธีมเขียว-ดำ",
-    "en": "Faster voice replies (sentence streaming + Drama3 cache), green-black pet room"
+    "th": "แอป native (Jetpack Compose) สำหรับแชต เพื่อน ไทม์ไลน์ โปรไฟล์ · เลย์เอาต์ใหม่ไม่ซ้อนกัน · เชื่อมต่อเซิร์ฟเวอร์อัตโนมัติ",
+    "en": "Native (Jetpack Compose) chats, friends, timeline and profile · clean non-overlapping layout · automatic server connection"
   },
-  "publishedAt": "2026-11-03T09:25:17.384Z"
+  "publishedAt": "2026-11-03T23:23:55Z"
 }
