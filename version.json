@@ -1,0 +1,12 @@
+{
+  "versionCode": 16,
+  "versionName": "0.9.0",
+  "sha256": "d257e1e69c3ea73c8d32c8cafa929da72c20a1dbfa9f54e60cdd550d3d884608",
+  "apkUrl": "https://github.com/purefxaidev/purecall-web/releases/download/v0.9.0/PURE-0.9.0-release.apk",
+  "minSupportedVersionCode": 1,
+  "changelog": {
+    "th": "เสียงตอบเร็วขึ้น (เล่นทีละประโยค + แคชเสียง Drama3), ห้องสัตว์เลี้ยงธีมเขียว-ดำ",
+    "en": "Faster voice replies (sentence streaming + Drama3 cache), green-black pet room"
+  },
+  "publishedAt": "2026-11-03T09:25:17.384Z"
+}
