@@ -1,7 +1,9 @@
 (()=>{const RM=matchMedia('(prefers-reduced-motion: reduce)').matches,$=s=>document.querySelector(s),$$=s=>document.querySelectorAll(s),D=window.I18N||{};
 // i18n
-let lang;try{lang=localStorage.getItem('pure.lang')}catch(e){}
-const qp=(location.search.match(/[?&]lang=(th|en)/)||[])[1];if(qp)lang=qp;if(!lang)lang=/^th/i.test(navigator.language||'')?'th':'en';
+const OK=l=>l==='th'||l==='en';let lang=null;
+const qp=(new URLSearchParams(location.search).get('lang')||'').toLowerCase().slice(0,2);
+if(OK(qp))lang=qp;else{try{const sv=localStorage.getItem('pure.lang');if(OK(sv))lang=sv}catch(e){}}
+if(!lang)lang=/^th/i.test(navigator.language||'')?'th':'en';
 function apply(l){lang=l;const d=D[l]||{};document.documentElement.lang=l;
 $$('[data-i18n]').forEach(e=>{const v=d[e.dataset.i18n];if(v!=null)e.innerHTML=v});
 $$('[data-i18n-meta]').forEach(e=>{const v=d[e.dataset.i18nMeta];if(v!=null)e.setAttribute('content',v.replace(/&amp;/g,'&'))});
