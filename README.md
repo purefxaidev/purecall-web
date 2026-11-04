@@ -1,5 +1,30 @@
 # PURE — Website
 
+<div align="center">
+  <a href="https://call.purefxai.store" title="Open PURE">
+    <img src="assets/img/pure-hero.webp" alt="PURE — your people, closer" width="100%">
+  </a>
+
+  <h1>PURE</h1>
+  <p><strong>Your people, closer.</strong><br>แชต โทร แชร์เรื่องราว และอยู่ใกล้กันในทุกวัน</p>
+  <p>
+    <a href="https://call.purefxai.store"><img alt="Open PURE" src="https://img.shields.io/badge/OPEN-PURE-00C878?style=for-the-badge"></a>
+    <a href="https://call.purefxai.store/downloads/PURE-0.12.0.apk"><img alt="Android 0.12.0" src="https://img.shields.io/badge/ANDROID-0.12.0-17191D?style=for-the-badge"></a>
+    <img alt="ภาษาไทยและอังกฤษ" src="https://img.shields.io/badge/THAI-ENGLISH-17191D?style=for-the-badge">
+  </p>
+</div>
+
+### PURE in motion · วิดีโอแนะนำ PURE
+
+<p align="center">
+  <a href="assets/ads/pure-group.mp4" title="Play the PURE promo video">
+    <img src="assets/ads/pure-group-poster.jpg" alt="เล่นวิดีโอโปรโมต PURE" width="760">
+  </a>
+  <br><sub>กดภาพเพื่อเปิดวิดีโอโปรโมต · Click the poster to play the PURE promo</sub>
+</p>
+
+---
+
 **Your people, closer.** PURE brings messaging, voice and video calls, a social timeline, 2D companions, and a helpful assistant together.
 
 **เว็บไซต์:** [call.purefxai.store](https://call.purefxai.store)
