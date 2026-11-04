@@ -1,18 +1,18 @@
 // PURE web guide: offline knowledge base + optional live AI (server.json -> <url>/api/web-guide)
-(()=>{const APK='https://github.com/purefxaidev/purecall-web/releases/download/v0.10.1/PURE-0.10.1.apk';
+(()=>{const APK='https://github.com/pureaicom-gif/PURECALL/releases/download/v0.12.0/PURE-0.12.0.apk';
 const L=()=>document.documentElement.lang==='th'?'th':'en';
 const T={th:{title:'ถามผู้ช่วย PURE',ph:'พิมพ์คำถาม…',send:'ส่ง',close:'ปิด',hello:'สวัสดีครับ ผมช่วยแนะนำการติดตั้งและใช้งาน PURE ได้ เลือกหัวข้อด้านล่างหรือพิมพ์คำถามได้เลย',miss:'ขอโทษครับ ผมยังไม่มีคำตอบเรื่องนี้ ลองเลือกหัวข้อด้านล่างนะครับ',next:'ขั้นต่อไป',prev:'ย้อนกลับ',done:'เสร็จแล้ว',step:'ขั้นที่',live:'ตอบโดย AI ออนไลน์',offline:'คู่มือในตัว',soon:'มีแล้ว'},
 en:{title:'Ask PURE guide',ph:'Type a question…',send:'Send',close:'Close',hello:'Hi! I can help you install and use PURE. Pick a topic below or type a question.',miss:'Sorry, I don\'t have an answer for that yet. Try one of the topics below.',next:'Next',prev:'Back',done:'Done',step:'Step',live:'Answered by online AI',offline:'Built-in guide',soon:'Available'}};
 // KB: id -> {k:{th:[keywords],en:[...]}, chip:{th,en}, steps:[{th,en,img?}], soon?}
 const KB=[
 {id:'download',chip:{th:'ดาวน์โหลด',en:'Download'},k:['ดาวน์โหลด','โหลด','apk','download','get','ไฟล์'],steps:[
-{th:`เปิดหน้านี้บนมือถือ Android 8 ขึ้นไป แล้วกด <a href="${APK}">ดาวน์โหลด PURE-0.10.1.apk</a>`,en:`Open this page on an Android 8+ phone and tap <a href="${APK}">Download PURE-0.10.1.apk</a>`,img:'assets/img/hero.webp'},
+{th:`เปิดหน้านี้บนมือถือ Android 8 ขึ้นไป แล้วกด <a href="${APK}">ดาวน์โหลด PURE-0.12.0.apk</a>`,en:`Open this page on an Android 8+ phone and tap <a href="${APK}">Download PURE-0.12.0.apk</a>`,img:'assets/img/pure-hero.webp'},
 {th:'ถ้าเบราว์เซอร์เตือนว่าไฟล์อาจเป็นอันตราย ให้กด "ดาวน์โหลดต่อ" เพราะเป็นไฟล์ APK ที่ไม่ได้มาจาก Google Play',en:'If the browser warns the file may be harmful, tap "Download anyway". It warns because the APK is not from Google Play.'}]},
 {id:'unknown',chip:{th:'อนุญาตแหล่งที่ไม่รู้จัก',en:'Unknown sources'},k:['แหล่งที่ไม่รู้จัก','ไม่รู้จัก','อนุญาต','unknown','sources','permission','blocked','บล็อก'],steps:[
 {th:'เปิด ตั้งค่า › แอป › เลือกเบราว์เซอร์ที่ใช้ดาวน์โหลด (เช่น Chrome)',en:'Open Settings › Apps › choose the browser you downloaded with (e.g. Chrome)'},
 {th:'แตะ "ติดตั้งแอปที่ไม่รู้จัก" แล้วเปิด "อนุญาตจากแหล่งนี้" ชื่อเมนูอาจต่างกันเล็กน้อยตามยี่ห้อมือถือ',en:'Tap "Install unknown apps" and turn on "Allow from this source". Menu names vary slightly by phone brand.'}]},
 {id:'install',chip:{th:'ติดตั้ง',en:'Install'},k:['ติดตั้ง','install','setup','ลง'],steps:[
-{th:'เปิดไฟล์ PURE-0.10.1.apk จากแถบแจ้งเตือนหรือโฟลเดอร์ ดาวน์โหลด',en:'Open PURE-0.10.1.apk from the notification or your Downloads folder'},
+{th:'เปิดไฟล์ PURE-0.12.0.apk จากแถบแจ้งเตือนหรือโฟลเดอร์ ดาวน์โหลด',en:'Open PURE-0.12.0.apk from the notification or your Downloads folder'},
 {th:'กด "ติดตั้ง" รอสักครู่ แล้วกด "เปิด"',en:'Tap "Install", wait a moment, then tap "Open"'},
 {th:'ใส่ที่อยู่เซิร์ฟเวอร์ PURE ที่คุณได้รับ หรือเซิร์ฟเวอร์ที่คุณรันเอง',en:'Enter the PURE server address you were given, or one you run yourself'}]},
 {id:'signup',chip:{th:'สมัครสมาชิก',en:'Sign up'},k:['สมัคร','สมาชิก','บัญชี','ล็อกอิน','เข้าสู่ระบบ','sign up','signup','register','account','login'],steps:[

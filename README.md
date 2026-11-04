@@ -1,5 +1,7 @@
 # purecall-web
-Landing page for PURE by PureFxAi → https://call.purefxai.store
+Landing page and browser entry for PURE by PureFxAi → https://call.purefxai.store
+
+The page fetches `server.json` so the “Open web app” buttons point to the current HTTPS PURE server. APK buttons download the latest signed release. Keep `version.json` in sync with each release.
 
 Drop images into assets/img/ (hero.png, chat.png, pet.png, ai.png, nearby.png).
 

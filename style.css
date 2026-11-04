@@ -124,3 +124,4 @@ body{padding-left:env(safe-area-inset-left);padding-right:env(safe-area-inset-ri
 }
 .promo-cta .btn{font-family:inherit}
 .soon-img img{object-position:top center}
+.feature-icon,.web-entry-icon,.download-icon{width:26px;height:26px;display:block;flex:none;fill:none;stroke:currentColor;stroke-width:1.65;stroke-linecap:round;stroke-linejoin:round}.card .feature-icon{width:34px;height:34px;color:var(--accent,#6ff0b0);margin:0 0 16px}.web-app-link.is-loading{opacity:.55;cursor:wait}.web-app-link.is-ready{opacity:1;cursor:pointer}.cta .web-entry-icon,.cta .download-icon{width:20px;height:20px}.nav-r .web-app-link{display:inline-flex;align-items:center;gap:8px}
