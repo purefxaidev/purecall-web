@@ -2,11 +2,11 @@
   "versionCode": 22,
   "versionName": "0.12.0",
   "sha256": "abe347c1d5aba1eb55c7a4561685b561aabd67ab89f5e2f817e76cdf2f0e407f",
-  "apkUrl": "https://github.com/pureaicom-gif/PURECALL/releases/download/v0.12.0/PURE-0.12.0.apk",
+  "apkUrl": "https://call.purefxai.store/downloads/PURE-0.12.0.apk",
   "minSupportedVersionCode": 1,
   "changelog": {
-    "en": "Refreshes PURE icon and web branding · adds server-side ComfyUI video workflow · improves TTS fallback",
-    "th": "ปรับไอคอน PURE และแบรนด์เว็บ · เพิ่มขั้นตอนวิดีโอ AI ด้วย ComfyUI ฝั่งเซิร์ฟเวอร์ · ปรับ fallback เสียงพูด"
+    "en": "Refreshes PURE icon and web branding · adds private creative tools · improves voice reliability",
+    "th": "ปรับไอคอน PURE และแบรนด์เว็บ · เพิ่มเครื่องมือสร้างสรรค์ส่วนตัว · ปรับระบบเสียงพูดให้เสถียร"
   },
   "publishedAt": "2026-11-04T10:13:33Z"
 }

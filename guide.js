@@ -1,5 +1,5 @@
 // PURE web guide: offline knowledge base + optional live AI (server.json -> <url>/api/web-guide)
-(()=>{const APK='https://github.com/pureaicom-gif/PURECALL/releases/download/v0.12.0/PURE-0.12.0.apk';
+(()=>{const APK='/downloads/PURE-0.12.0.apk';
 const L=()=>document.documentElement.lang==='th'?'th':'en';
 const T={th:{title:'ถามผู้ช่วย PURE',ph:'พิมพ์คำถาม…',send:'ส่ง',close:'ปิด',hello:'สวัสดีครับ ผมช่วยแนะนำการติดตั้งและใช้งาน PURE ได้ เลือกหัวข้อด้านล่างหรือพิมพ์คำถามได้เลย',miss:'ขอโทษครับ ผมยังไม่มีคำตอบเรื่องนี้ ลองเลือกหัวข้อด้านล่างนะครับ',next:'ขั้นต่อไป',prev:'ย้อนกลับ',done:'เสร็จแล้ว',step:'ขั้นที่',live:'ตอบโดย AI ออนไลน์',offline:'คู่มือในตัว',soon:'มีแล้ว'},
 en:{title:'Ask PURE guide',ph:'Type a question…',send:'Send',close:'Close',hello:'Hi! I can help you install and use PURE. Pick a topic below or type a question.',miss:'Sorry, I don\'t have an answer for that yet. Try one of the topics below.',next:'Next',prev:'Back',done:'Done',step:'Step',live:'Answered by online AI',offline:'Built-in guide',soon:'Available'}};
